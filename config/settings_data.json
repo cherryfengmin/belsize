@@ -1,0 +1,795 @@
+{
+  "current": {
+    "color_body_bg": "#ffffff",
+    "color_headings": "#000000",
+    "color_body_text": "#000000",
+    "color_borders": "#95c21b",
+    "color_button_text": "#ffffff",
+    "color_primary": "#000000",
+    "color_secondary": "#95c21b",
+    "color_product_background": "#ffffff",
+    "color_sale_tag": "#e80970",
+    "color_input": "#f6f6f6",
+    "color_newsletter": "#95c21b",
+    "color_drawer_background": "#ffffff",
+    "color_drawer_text": "#000000",
+    "color_drawer_border": "#f6f6f6",
+    "color_drawer_button": "#000000",
+    "color_drawer_button_text": "#ffffff",
+    "type_header_family": "poppins_n4",
+    "type_header_base_size": "38px",
+    "type_header_border_thickness": "1px",
+    "type_accent_family": "poppins_n4",
+    "type_accent_transform": false,
+    "type_accent_spacing": false,
+    "type_accent_subheadings": false,
+    "type_base_family": "poppins_n4",
+    "type_base_size": "16px",
+    "type_base_italize_titles": false,
+    "cart_type": "drawer",
+    "cart_notes_enable": true,
+    "social_facebook_link": "https:\/\/www.facebook.com\/BelsizeBike-102325715299877",
+    "social_twitter_link": "",
+    "social_pinterest_link": "",
+    "social_instagram_link": "https:\/\/www.instagram.com\/belsizebikes",
+    "social_snapchat_link": "",
+    "social_google_plus_link": "",
+    "social_tumblr_link": "",
+    "social_youtube_link": "https:\/\/www.youtube.com\/channel\/UCtT5PmvzdtisTDhaXaEsNVQ",
+    "social_vimeo_link": "",
+    "social_fancy_link": "",
+    "share_facebook": true,
+    "share_twitter": true,
+    "share_pinterest": true,
+    "favicon": "shopify:\/\/shop_images\/favicon.png",
+    "checkout_header_image": "",
+    "checkout_logo_image": "",
+    "checkout_logo_position": "left",
+    "checkout_logo_size": "small",
+    "checkout_body_background_image": "",
+    "checkout_body_background_color": "#ffffff",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_image": "",
+    "checkout_sidebar_background_color": "#ffffff",
+    "checkout_heading_font": "Helvetica Neue",
+    "checkout_body_font": "Helvetica Neue",
+    "checkout_accent_color": "#95c21b",
+    "checkout_button_color": "#95c21b",
+    "checkout_error_color": "#f01130",
+    "checkout_banner_background_color": "#fff",
+    "checkout_call_to_action_color": "#a26b25",
+    "checkout_use_header_image": false,
+    "collection_products_grid": "collage",
+    "customer_layout": "customer_area",
+    "favicon_enable": false,
+    "product_vendor_enable": false,
+    "social_sharing_style": "clean",
+    "sections": {
+      "slideshow": {
+        "type": "slideshow",
+        "blocks": {
+          "1495823280244": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/new_banner-pc.jpg",
+              "image_m": "shopify:\/\/shop_images\/new_banner-mobile.jpg",
+              "image_position": "center center",
+              "image_overlay": false,
+              "image_overlay_opacity": 25,
+              "text_wide_range": 29,
+              "text_padding": "25px 2.5vw 0 2.5vw",
+              "text_alignment": "left",
+              "slide_heading": "",
+              "slide_subheading": "The Ultimate Riding Experience",
+              "slide_html": "<ul>\n<li>Maintenance-free<\/li>\n<li>Easy to Maneuver<\/li>\n<li>Safer Hand Brakes<\/li>\n<\/ul>",
+              "button_label": "Shop bikes",
+              "button_link": "shopify:\/\/products\/belsize-16-inch-belt-driven-kids-bike",
+              "slide_text_color": "#000000",
+              "slide_button_label_color": "#ffffff",
+              "slide_button_background_color": "#000000"
+            }
+          }
+        },
+        "block_order": [
+          "1495823280244"
+        ],
+        "settings": {
+          "home_hero_height": "full",
+          "hero_home_auto": false,
+          "home_hero_auto_speed": 5,
+          "display_social": false
+        }
+      },
+      "featured-products": {
+        "type": "featured-products",
+        "settings": {
+          "title": "Featured collection",
+          "home_featured_products": "frontpage",
+          "collection_products_grid": "grid"
+        }
+      },
+      "newsletter": {
+        "type": "newsletter",
+        "settings": {
+          "heading": "Subscribe to our newsletter",
+          "subheading": "<p>Promotions, new products and sales. Directly to your inbox.<\/p>"
+        }
+      },
+      "header": {
+        "type": "header",
+        "settings": {
+          "logo": "shopify:\/\/shop_images\/logo.png",
+          "logo_max_width": 260,
+          "header_color": "#000000",
+          "transparent_header_enable": false,
+          "transparent_header_color": "#ffffff",
+          "search": "modal",
+          "main_menu_link_list": "main-menu",
+          "drawer_top_link_list": "sidebar-menu",
+          "drawer_bottom_link_list": "footer",
+          "drawer_search_enable": true,
+          "show_announcement": false,
+          "home_page_only": false,
+          "text": "",
+          "color_bg": "#95c21b",
+          "color_text": "#ffffff"
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "8d0da947-14e5-4c91-b832-a19c43058463": {
+            "type": "link_list",
+            "settings": {
+              "title": "Quick links",
+              "menu": "footer",
+              "menu_title": "About Belsize"
+            }
+          },
+          "5f2e1b09-f2c0-4503-aa12-90521895cda9": {
+            "type": "link_list",
+            "settings": {
+              "title": "Quick links",
+              "menu": "footer-menu-2",
+              "menu_title": "Support"
+            }
+          },
+          "d5b6ee24-862d-4b92-9577-a408f6327c54": {
+            "type": "newsletter",
+            "settings": {
+              "title": "Newsletter",
+              "menu_title": "Join the Community"
+            }
+          }
+        },
+        "block_order": [
+          "8d0da947-14e5-4c91-b832-a19c43058463",
+          "5f2e1b09-f2c0-4503-aa12-90521895cda9",
+          "d5b6ee24-862d-4b92-9577-a408f6327c54"
+        ],
+        "settings": {
+          "show_payment_icons": false,
+          "show_locale_selector": false,
+          "show_currency_selector": false
+        }
+      },
+      "collection-template": {
+        "type": "collection-template",
+        "settings": {
+          "show_collection_image": false,
+          "collection_sort_enable": false,
+          "collection_tags_enable": false,
+          "collection_products_grid": "grid",
+          "product_vendor_enable": false
+        }
+      },
+      "product-template": {
+        "type": "product-template",
+        "settings": {
+          "product_vendor_enable": false,
+          "social_sharing_products": false,
+          "quantity_enabled": true,
+          "product_selector": "radio",
+          "enable_payment_button": true,
+          "add_to_cart_button_size": "small",
+          "media_layout": "thumbnails",
+          "enable_image_zoom": true,
+          "enable_video_looping": false,
+          "guarantee_html": "<div class=\"grid-uniform \">\n<div class=\"grid__item  one-half   \">\n<div class=\"leftpart\"><img class=\" ls-is-cached lazyload\" data-src=\"\/\/cdn.shopify.com\/s\/files\/1\/0552\/1935\/5797\/files\/home-guarantee-img01_50x.png?v=1616059206\" width=\"50\" height=\"50\"><\/div>\n<div class=\"rightpart\"><h6>Free US Shipping<\/h6><\/div>\n<\/div>\n<div class=\"grid__item  one-half  \">\n<div class=\"leftpart\"><img class=\" lazyload\" data-src=\"\/\/cdn.shopify.com\/s\/files\/1\/0552\/1935\/5797\/files\/home-guarantee-img02_50x.png?v=1616059206\" width=\"50\" height=\"50\"><\/div>\n<div class=\"rightpart\"><h6>30-day No-hassle Returns<\/h6><\/div>\n<\/div>\n<div class=\"grid__item  one-half  \">\n<div class=\"leftpart\"><img class=\" lazyload\" data-src=\"\/\/cdn.shopify.com\/s\/files\/1\/0552\/1935\/5797\/files\/home-guarantee-img03_50x.png?v=1616059207\" width=\"50\" height=\"50\"><\/div>\n<div class=\"rightpart\"><h6>Engineered For Children<\/h6><\/div>\n<\/div>\n<div class=\"grid__item one-half\">\n<div class=\"leftpart\"><img class=\"lazyload\" data-src=\"\/\/cdn.shopify.com\/s\/files\/1\/0552\/1935\/5797\/files\/home-guarantee-img04_50x.png?v=1616059207\" width=\"50\" height=\"50\"><\/div>\n<div class=\"rightpart\"><h6>Easy Assembly<\/h6><\/div>\n<\/div>\n<div class=\"grid__item one-half\">\n<div class=\"leftpart\"><img class=\" lazyload\" data-src=\"\/\/cdn.shopify.com\/s\/files\/1\/0552\/1935\/5797\/files\/home-guarantee-img05_50x.png?v=1616059207 \" width=\"50\" height=\"50\"><\/div>\n<div class=\"rightpart\"><h6>Responsive Customer Support<\/h6><\/div>\n<\/div>\n<div class=\"grid__item one-half\">\n<div class=\"leftpart\"><img class=\"lazyload\" data-src=\"\/\/cdn.shopify.com\/s\/files\/1\/0552\/1935\/5797\/files\/home-guarantee-img06_50x.png?v=1616059207\" width=\"50\" height=\"50\"><\/div>\n<div class=\"rightpart\"><h6>Strict Quality Control<\/h6><\/div>\n<\/div>\n<\/div>"
+        }
+      },
+      "1616058893e407bbe6": {
+        "type": "guarantee",
+        "blocks": {
+          "40eabddf-dffc-4cc0-ae13-b9da1c2d1d8d": {
+            "type": "image_picker",
+            "settings": {
+              "guarantee_img": "shopify:\/\/shop_images\/home-guarantee-img03.png",
+              "guarantee_caption": "Engineered For Children"
+            }
+          },
+          "1fa3fc78-f510-48b1-8882-c9499336f1d8": {
+            "type": "image_picker",
+            "settings": {
+              "guarantee_img": "shopify:\/\/shop_images\/home-guarantee-img04.png",
+              "guarantee_caption": "Assemble in 5 Minutes"
+            }
+          },
+          "32979f6b-ac17-4aaf-b36a-7a0e47193e62": {
+            "type": "image_picker",
+            "settings": {
+              "guarantee_img": "shopify:\/\/shop_images\/home-guarantee-img06.png",
+              "guarantee_caption": "Strict Quality Control"
+            }
+          },
+          "20e944a4-78e4-4514-9229-38a4b3abce7b": {
+            "type": "image_picker",
+            "settings": {
+              "guarantee_img": "shopify:\/\/shop_images\/home-guarantee-img01.png",
+              "guarantee_caption": "Free US Shipping"
+            }
+          },
+          "d58a257b-9bc9-4b2d-a73c-b70791142451": {
+            "type": "image_picker",
+            "settings": {
+              "guarantee_img": "shopify:\/\/shop_images\/home-guarantee-img02.png",
+              "guarantee_caption": "30-day No-hassle Returns"
+            }
+          },
+          "df3bf68c-d2ae-46e0-8290-d9ce55cb294b": {
+            "type": "image_picker",
+            "settings": {
+              "guarantee_img": "shopify:\/\/shop_images\/home-guarantee-img05.png",
+              "guarantee_caption": "Responsive Customer Support"
+            }
+          }
+        },
+        "block_order": [
+          "40eabddf-dffc-4cc0-ae13-b9da1c2d1d8d",
+          "1fa3fc78-f510-48b1-8882-c9499336f1d8",
+          "32979f6b-ac17-4aaf-b36a-7a0e47193e62",
+          "20e944a4-78e4-4514-9229-38a4b3abce7b",
+          "d58a257b-9bc9-4b2d-a73c-b70791142451",
+          "df3bf68c-d2ae-46e0-8290-d9ce55cb294b"
+        ],
+        "settings": {}
+      },
+      "1616061342c5df20cd": {
+        "type": "featured-reviews",
+        "blocks": {
+          "8b9a8109-01b2-4e74-9214-9c3a5059b011": {
+            "type": "Article",
+            "settings": {
+              "article": "reviews\/extremely-satisfied",
+              "author": "Serena"
+            }
+          },
+          "b7f9d885-ec18-44a8-8ac9-e968050420b4": {
+            "type": "Image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/review_2_500x500_8c9d8037-f47b-4cea-9cb6-a1e9857424aa.png"
+            }
+          },
+          "f740339d-5729-4fbe-ad5c-4a8cc210640d": {
+            "type": "Article",
+            "settings": {
+              "article": "reviews\/great-bike",
+              "author": "Jennifer"
+            }
+          },
+          "6946ea20-a12a-4710-bb93-87d7e7a4cd3b": {
+            "type": "Image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/review_3_500x500_79e6f5c3-6a1d-41e1-abf2-d5b9f68d0262.png"
+            }
+          },
+          "6f29da4b-c4bb-4fb7-8a59-8f373c59bcb8": {
+            "type": "Article",
+            "settings": {
+              "article": "reviews\/good",
+              "author": "Joe"
+            }
+          },
+          "78f44e8a-2650-482e-af1c-f13c8742ba1f": {
+            "type": "Image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/review_500x500_d23aada9-899e-4a63-800e-9654719f6596.png"
+            }
+          },
+          "a0de1b8f-c1b3-41b9-ad1c-e7fe0d0ab8fe": {
+            "type": "Article",
+            "settings": {
+              "article": "reviews\/get-kids-excited-about-riding",
+              "author": "Christina"
+            }
+          },
+          "10d719fd-a9f1-4736-aef3-818c570f4ecf": {
+            "type": "Image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/belsize_extrem.jpg"
+            }
+          }
+        },
+        "block_order": [
+          "8b9a8109-01b2-4e74-9214-9c3a5059b011",
+          "b7f9d885-ec18-44a8-8ac9-e968050420b4",
+          "f740339d-5729-4fbe-ad5c-4a8cc210640d",
+          "6946ea20-a12a-4710-bb93-87d7e7a4cd3b",
+          "6f29da4b-c4bb-4fb7-8a59-8f373c59bcb8",
+          "78f44e8a-2650-482e-af1c-f13c8742ba1f",
+          "a0de1b8f-c1b3-41b9-ad1c-e7fe0d0ab8fe",
+          "10d719fd-a9f1-4736-aef3-818c570f4ecf"
+        ],
+        "settings": {
+          "title": "Real Reviews from Real Customers",
+          "link": "shopify:\/\/pages\/contact-us",
+          "btn_text": "Get in Touch"
+        }
+      },
+      "1616146757ccfa77e0": {
+        "type": "slideshow",
+        "blocks": {
+          "1616146757ccfa77e0-0": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/homegroup2-banner.jpg",
+              "image_m": "shopify:\/\/shop_images\/homegroup2-banner-mobile.jpg",
+              "image_position": "center center",
+              "image_overlay": false,
+              "image_overlay_opacity": 25,
+              "text_wide_range": 32,
+              "text_padding": "25px 2vw 0 2vw",
+              "text_alignment": "left",
+              "slide_heading": "16-Inch Bike",
+              "slide_subheading": "",
+              "slide_html": "<table>\n<tbody>\n<tr>\n<td>\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0552\/1935\/5797\/files\/home-banner-icion-bike.png?v=1616574348\">\n<\/td>\n\n<td>\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0552\/1935\/5797\/files\/home-banner-icion-baby.png?v=1616574348\">\n<\/td>\n<\/tr>\n<tr>\n<td>Size: <strong>16\" wheels<\/strong>\n<\/td>\n<td>Age: <strong>3-7 years<\/strong>\n<\/td>\n<\/tr>\n<tr>\n<td>Weight: <strong>12.57 Ibs<\/strong>\n<\/td>\n<td>Height: <strong>3'7\"- 4'0\" <\/strong>\n<\/td>\n<\/tr>\n<\/tbody>\n<\/table>",
+              "button_label": "Shop Bikes",
+              "button_link": "shopify:\/\/products\/belsize-16-inch-belt-driven-kids-bike",
+              "slide_text_color": "#000000",
+              "slide_button_label_color": "#ffffff",
+              "slide_button_background_color": "#000000"
+            }
+          },
+          "1616146757ccfa77e0-1": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/homegroup3-banner.png",
+              "image_m": "shopify:\/\/shop_images\/homegroup3-banner-mobile.png",
+              "image_position": "center center",
+              "image_overlay": false,
+              "image_overlay_opacity": 25,
+              "text_wide_range": 32,
+              "text_padding": "25px 2vw 0 2vw",
+              "text_alignment": "left",
+              "slide_heading": "20-Inch Bike",
+              "slide_subheading": "",
+              "slide_html": "<table>\n<tbody>\n<tr>\n<td>\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0552\/1935\/5797\/files\/home-banner-icion-bike.png?v=1616574348\">\n<\/td>\n\n<td>\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0552\/1935\/5797\/files\/home-banner-icion-baby.png?v=1616574348\">\n<\/td>\n<\/tr>\n<tr>\n<td>Size: <strong>20\" wheels<\/strong>\n<\/td>\n<td>Age: <strong>7-10 years<\/strong>\n<\/td>\n<\/tr>\n<tr>\n<td>Weight: <strong>14.82 Ibs<\/strong>\n<\/td>\n<td>Height: <strong>4'0\"- 4'5\" <\/strong>\n<\/td>\n<\/tr>\n<\/tbody>\n<\/table>",
+              "button_label": "Shop Bikes",
+              "button_link": "shopify:\/\/products\/belsize-20-inch-belt-driven-kids-bike",
+              "slide_text_color": "#000000",
+              "slide_button_label_color": "#ffffff",
+              "slide_button_background_color": "#1f2021"
+            }
+          }
+        },
+        "block_order": [
+          "1616146757ccfa77e0-0",
+          "1616146757ccfa77e0-1"
+        ],
+        "settings": {
+          "home_hero_height": "full",
+          "hero_home_auto": false,
+          "home_hero_auto_speed": 5,
+          "display_social": false
+        }
+      },
+      "161639381650990915": {
+        "type": "featured-block",
+        "blocks": {
+          "a4e59eac-bc8c-4632-91a3-2887a922b748": {
+            "type": "Image",
+            "settings": {
+              "title": "Lightweight",
+              "image": "shopify:\/\/shop_images\/lightweight_900x600_443334b0-16b8-4c9d-b884-cdda573bd180.png",
+              "tab_title": "Lightweight",
+              "tab_text": "No more wrestling with a heavy bike. A lighter bike is easier to control, making it more fun to ride!",
+              "btn": "Find Size",
+              "url": "shopify:\/\/pages\/support-sizing"
+            }
+          },
+          "e52db359-67f3-4bb2-9d4a-f3b7e3aa1c49": {
+            "type": "Image",
+            "settings": {
+              "title": "Belt-Drive System",
+              "image": "shopify:\/\/shop_images\/feature-Belt-driven-System.png",
+              "tab_title": "Belt-Drive System",
+              "tab_text": "The rubber belt rides quieter, smoother, and needs less maintenance than a traditional metal chain.",
+              "btn": "Find Size",
+              "url": "shopify:\/\/pages\/support-sizing"
+            }
+          },
+          "b7d8fe69-4e17-4641-889a-ee2c6fbaf0c7": {
+            "type": "Image",
+            "settings": {
+              "title": "Adjustable Hand Brakes",
+              "image": "shopify:\/\/shop_images\/feature-Adjustable-Dual-Hand-Brakes.png",
+              "tab_title": "Adjustable Hand Brakes",
+              "tab_text": "Safer than pedal brakes, the adjustable handles fit hands both big and small for a bike that grows with your child.",
+              "btn": "Find Size",
+              "url": "shopify:\/\/pages\/support-sizing"
+            }
+          },
+          "c5a2786c-2d57-4060-9fbd-32c48081fba6": {
+            "type": "Image",
+            "settings": {
+              "title": "Quick Assembly",
+              "image": "shopify:\/\/shop_images\/quick_assembly.png",
+              "tab_title": "Quick Assembly",
+              "tab_text": "Coming out of the package 95% assembled, you only need 5 minutes to get your child cycling down the sidewalk.",
+              "btn": "Find Size",
+              "url": "shopify:\/\/pages\/support-sizing"
+            }
+          }
+        },
+        "block_order": [
+          "a4e59eac-bc8c-4632-91a3-2887a922b748",
+          "e52db359-67f3-4bb2-9d4a-f3b7e3aa1c49",
+          "b7d8fe69-4e17-4641-889a-ee2c6fbaf0c7",
+          "c5a2786c-2d57-4060-9fbd-32c48081fba6"
+        ],
+        "settings": {
+          "title": "Ultimate Riding Experience with Belsize"
+        }
+      },
+      "product-recommendations": {
+        "type": "product-recommendations",
+        "settings": {
+          "show_product_recommendations": false,
+          "heading": "You may also like"
+        }
+      },
+      "contact-section": {
+        "type": "contact-section",
+        "settings": {
+          "time": "<p>Your inquiries will be addressed within 24 hours from Mon. to Fri.<\/p>",
+          "email": "<p>Please feel free to contact us by email via <a href=\"mailto:support@belsizebike.com\">support@belsizebike.com<\/a> and we’ll do our best to solve your concerns.<\/p>",
+          "address": "<p>Physical Address: 2900 SW Wanamaker dr, Topeka, KS 66614, US<\/p>"
+        }
+      },
+      "video-download": {
+        "type": "video-download",
+        "blocks": {
+          "f5cd9035-73ec-4f6a-9bd5-29f92546fb7b": {
+            "type": "file",
+            "settings": {
+              "file_name": "Belsize 16, Belsize 20 Assembly",
+              "url": "https:\/\/cdn.shopifycdn.net\/s\/files\/1\/0552\/1935\/5797\/files\/Belsize_16_20_bike_assmebly_instructions.pdf?v=1620100086"
+            }
+          },
+          "0e6de117-ebd3-4eca-857a-827cfc10d6e9": {
+            "type": "file",
+            "settings": {
+              "file_name": "Belsize 16 Belt Guard & Reflectors Assembly",
+              "url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0552\/1935\/5797\/files\/ANS-BK-16SL-belt-guard.pdf?v=1618814759"
+            }
+          },
+          "41be8d1d-3c72-4c7e-918f-f42b16f46434": {
+            "type": "file",
+            "settings": {
+              "file_name": "Belsize 20 Belt Guard & Reflectors Assembly",
+              "url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0552\/1935\/5797\/files\/ANS-BK-20SL-belt-guard.pdf?v=1618814858"
+            }
+          },
+          "2a8fad46-9d1d-488e-9b11-194cfd22c88f": {
+            "type": "Video",
+            "settings": {
+              "title": "",
+              "image": "shopify:\/\/shop_images\/quick_assembly.png",
+              "youtube_url": "https:\/\/www.youtube.com\/watch?v=nawopEhTAmY"
+            }
+          }
+        },
+        "block_order": [
+          "f5cd9035-73ec-4f6a-9bd5-29f92546fb7b",
+          "0e6de117-ebd3-4eca-857a-827cfc10d6e9",
+          "41be8d1d-3c72-4c7e-918f-f42b16f46434",
+          "2a8fad46-9d1d-488e-9b11-194cfd22c88f"
+        ],
+        "settings": {
+          "check_file": true,
+          "check_video": true,
+          "video_title": "Bike Assembly Video (Belsize 16, Belsize 20)",
+          "file_title": "Manuals"
+        }
+      }
+    },
+    "content_for_index": [
+      "slideshow",
+      "161639381650990915",
+      "1616146757ccfa77e0",
+      "1616061342c5df20cd",
+      "1616058893e407bbe6"
+    ]
+  },
+  "presets": {
+    "Classic": {
+      "checkout_accent_color": "#a26b25",
+      "checkout_button_color": "#000000",
+      "checkout_error_color": "e32c2b",
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {
+            "show_announcement": true
+          }
+        },
+        "slideshow": {
+          "type": "slideshow",
+          "blocks": {
+            "slideshow-0": {
+              "type": "slide",
+              "settings": {}
+            },
+            "slideshow-1": {
+              "type": "slide",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "slideshow-0",
+            "slideshow-1"
+          ],
+          "settings": {}
+        },
+        "featured-content": {
+          "type": "featured-content",
+          "settings": {
+            "section_title": "",
+            "text_size": "large"
+          }
+        },
+        "featured-collections": {
+          "type": "featured-collections",
+          "blocks": {
+            "featured-collections-0": {
+              "type": "collection",
+              "settings": {}
+            },
+            "featured-collections-1": {
+              "type": "collection",
+              "settings": {}
+            },
+            "featured-collections-2": {
+              "type": "collection",
+              "settings": {}
+            },
+            "featured-collections-3": {
+              "type": "collection",
+              "settings": {}
+            },
+            "featured-collections-4": {
+              "type": "collection",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "featured-collections-0",
+            "featured-collections-1",
+            "featured-collections-2",
+            "featured-collections-3",
+            "featured-collections-4"
+          ],
+          "settings": {}
+        },
+        "featured-products": {
+          "type": "featured-products",
+          "settings": {
+            "collection_products_grid": "grid"
+          }
+        },
+        "featured-product": {
+          "type": "featured-product",
+          "settings": {}
+        },
+        "newsletter": {
+          "type": "newsletter",
+          "settings": {}
+        }
+      },
+      "content_for_index": [
+        "slideshow",
+        "featured-content",
+        "featured-collections",
+        "featured-products",
+        "featured-product",
+        "newsletter"
+      ]
+    },
+    "Playful": {
+      "color_body_bg": "#ffffff",
+      "color_body_text": "#565656",
+      "color_borders": "#5dd2b4",
+      "color_button_text": "#ffffff",
+      "color_primary": "#7737BD",
+      "color_secondary": "#058677",
+      "color_product_background": "#fff4f6",
+      "color_sale_tag": "#e80970",
+      "color_input": "#f6f6f6",
+      "color_newsletter": "#bde9f2",
+      "color_drawer_background": "#360f5f",
+      "color_drawer_text": "#ffffff",
+      "color_drawer_border": "#50297a",
+      "color_drawer_button": "#7737BD",
+      "color_drawer_button_text": "#ffffff",
+      "color_headings": "#321863",
+      "type_header_family": "quicksand_n7",
+      "type_header_base_size": "38px",
+      "type_header_border_thickness": "1px",
+      "type_accent_family": "roboto_n7",
+      "type_accent_transform": true,
+      "type_accent_spacing": true,
+      "type_accent_subheadings": false,
+      "type_base_family": "helvetica_n4",
+      "type_base_size": "17px",
+      "type_base_italize_titles": false,
+      "cart_type": "drawer",
+      "cart_notes_enable": true,
+      "social_facebook_link": "",
+      "social_twitter_link": "",
+      "social_pinterest_link": "",
+      "social_instagram_link": "",
+      "social_snapchat_link": "",
+      "social_google_plus_link": "",
+      "social_tumblr_link": "",
+      "social_youtube_link": "",
+      "social_vimeo_link": "",
+      "social_fancy_link": "",
+      "share_facebook": true,
+      "share_twitter": true,
+      "share_pinterest": true,
+      "favicon": "",
+      "checkout_header_image": "",
+      "checkout_logo_image": "",
+      "checkout_logo_position": "left",
+      "checkout_logo_size": "small",
+      "checkout_body_background_image": "",
+      "checkout_body_background_color": "#ffffff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_image": "",
+      "checkout_sidebar_background_color": "#fff4f6",
+      "checkout_heading_font": "Helvetica Neue",
+      "checkout_body_font": "Roboto",
+      "checkout_accent_color": "#7737BD",
+      "checkout_button_color": "#7737BD",
+      "checkout_error_color": "#f01130",
+      "checkout_banner_background_color": "#fff",
+      "checkout_call_to_action_color": "#a26b25",
+      "checkout_use_header_image": false,
+      "collection_products_grid": "collage",
+      "customer_layout": "customer_area",
+      "favicon_enable": false,
+      "product_vendor_enable": false,
+      "social_sharing_style": "clean",
+      "sections": {
+        "slideshow": {
+          "type": "slideshow",
+          "blocks": {
+            "1495823280244": {
+              "type": "slide",
+              "settings": {
+                "slide_text_color": "#ffffff",
+                "slide_button_label_color": "#003B34",
+                "slide_button_background_color": "#84D1B2"
+              }
+            }
+          },
+          "block_order": [
+            "1495823280244"
+          ],
+          "settings": {
+            "hero_home_auto": false,
+            "home_hero_auto_speed": 5
+          }
+        },
+        "featured-products": {
+          "type": "featured-products",
+          "settings": {
+            "home_featured_products": "frontpage",
+            "collection_products_grid": "collage"
+          }
+        },
+        "newsletter": {
+          "type": "newsletter",
+          "settings": {}
+        },
+        "header": {
+          "type": "header",
+          "settings": {
+            "logo_max_width": 260,
+            "search": "modal",
+            "main_menu_link_list": "main-menu",
+            "show_announcement": false,
+            "color_bg": "#290c49",
+            "color_text": "#ffffff"
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "settings": {}
+        },
+        "collection-template": {
+          "type": "collection-template",
+          "settings": {
+            "collection_tags_enable": false,
+            "collection_products_grid": "grid",
+            "product_vendor_enable": false
+          }
+        },
+        "1494860348200": {
+          "type": "featured-row",
+          "settings": {
+            "layout": "right"
+          }
+        },
+        "1494894035034": {
+          "type": "featured-row",
+          "settings": {
+            "layout": "left"
+          }
+        },
+        "product-template": {
+          "type": "product-template",
+          "settings": {
+            "product_vendor_enable": false,
+            "social_sharing_products": true,
+            "enable_image_zoom": false,
+            "enable_video_looping": false
+          }
+        },
+        "1496078102297": {
+          "type": "advanced-content",
+          "blocks": {
+            "1496078102297-0": {
+              "type": "html",
+              "settings": {
+                "code": "<div style=\"text-align:center;\">\n<h1 class=\"h1\">Use HTML to format your text so it can be easily read.<\/h1>This text can be used to share information about your brand with customers.<\/div>",
+                "width": "100%",
+                "alignment": "top-middle"
+              }
+            }
+          },
+          "block_order": [
+            "1496078102297-0"
+          ],
+          "settings": {}
+        },
+        "1496177901425": {
+          "type": "advanced-content",
+          "blocks": {
+            "1496177901425-0": {
+              "type": "html",
+              "settings": {
+                "code": "<div style=\"width:745px;text-align: center; margin: 0 auto;\">This text can be used to share information about your brand with customers.<\/div>",
+                "width": "100%",
+                "alignment": "top-middle"
+              }
+            }
+          },
+          "block_order": [
+            "1496177901425-0"
+          ],
+          "settings": {}
+        }
+      },
+      "content_for_index": [
+        "slideshow",
+        "1496177901425",
+        "featured-products",
+        "newsletter",
+        "1496078102297",
+        "1494860348200",
+        "1494894035034"
+      ]
+    }
+  }
+}

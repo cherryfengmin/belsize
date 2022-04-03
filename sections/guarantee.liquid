@@ -1,0 +1,93 @@
+{% if section.blocks.size > 0%} 
+ {% assign num_columns = section.blocks.size %}
+{% case num_columns %}
+        {% when 0 %}
+        {% when 1 %}
+          {% assign column_width = '' %}
+        {% when 2 %}
+          {% assign column_width = 'one-half small--one-whole' %}
+        {% when 3 %}
+          {% assign column_width = 'one-third small--one-whole' %}
+        {% when 4 %}
+          {% assign column_width = 'large--one-quarter medium--one-half' %}
+		{% when 5 %}
+          {% assign column_width = 'one-third small--one-whole' %}
+		{% when 6 %}
+          {% assign column_width = 'large--one-third medium--one-half' %}
+      {% endcase %}
+<div class="guarantee">
+  <div class="wrapper">
+    <div class="grid-uniform ">
+      {%- for block in section.blocks -%}
+      <div class="grid__item small--one-half one-quarter {{ column_width }} "> 
+        <div class="leftpart">
+          <img class="lazyload" data-src="{{ block.settings.guarantee_img | img_url : '50x'}}" width="50" height="50"/>
+        </div>
+        <div class="rightpart">
+          <h6>{{ block.settings.guarantee_caption }}</h6>
+        </div>
+      </div>
+      {%- endfor -%}
+    </div>
+  </div>
+  </div>
+{% endif %}
+{% schema %}
+  {
+    "name": "Guarantee",
+    "settings": [],
+"blocks": [
+{
+      "type": "image_picker",
+      "name": "Guarantee",
+	  "settings": [
+        {
+            "type": "image_picker",
+            "id": "guarantee_img",
+            "label": "Guarantee  image",
+            "info":"Image size:50*50px"
+        },{
+            "type": "text",
+            "id": "guarantee_caption",
+            "label": "Guarantee caption",
+            "default":"Free Express Shipping"
+        }
+		]
+}
+],
+ "presets": [
+    {
+      "name": "Guarantee",
+      "category": {
+        "cs": "Obrázek",
+        "da": "Billede",
+        "de": "Foto",
+        "en": "Image",
+        "es": "Imagen",
+        "fi": "Kuva",
+        "fr": "Image",
+        "it": "Immagine",
+        "ja": "画像",
+        "ko": "이미지",
+        "nb": "Bilde",
+        "nl": "Afbeelding",
+        "pl": "Obraz",
+        "pt-BR": "Imagem",
+        "pt-PT": "Imagem",
+        "sv": "Bild",
+        "th": "รูปภาพ",
+        "tr": "Görsel",
+        "vi": "Hình ảnh",
+        "zh-CN": "图片",
+        "zh-TW": "圖片"
+      }
+    }
+  ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

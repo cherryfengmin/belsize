@@ -1,0 +1,31 @@
+<div class="time contact-line">{% include 'icon-time'%}<div class="texbox time-text">{{ section.settings.time }}</div></div>
+<div class="email contact-line">{% include 'icon-email'%}<div class="texbox email-text">{{ section.settings.email }}</div></div>
+<div class="address contact-line">{% include 'icon-address'%}<div class="texbox address-text">{{ section.settings.address }}</div></div>
+{% schema %}
+  {
+    "name": "Contact section",
+    "settings": [
+      {
+        "type":"richtext",
+        "id":"time",
+        "label":"Time"
+      },
+      {
+        "type":"richtext",
+        "id":"email",
+        "label":"Email"
+      },
+      {
+        "type":"richtext",
+        "id":"address",
+        "label":"Address"
+      }
+]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

@@ -1,0 +1,221 @@
+{% if section.blocks.size > 0%} 
+<div class="featured-block wrapper">
+  {% if section.settings.check_file %}
+  <h3 class="Manuals-Videos-tittle"><strong>{{ section.settings.file_title}}</strong></h3>
+  
+  <div class="manuals-body">
+    {%- for block in section.blocks -%}
+    {% if block.type == 'file'%}
+  <a href="{{ block.settings.url }}" target="_blank">
+    <div class="manuals-box">
+      <div class="manuals-name">
+        {{ block.settings.file_name }}
+      </div>
+    </div>
+  </a>
+    {% endif %}
+   {%- endfor -%}
+ </div>
+  {% endif %}
+  
+  
+  {% if section.settings.check_video %}
+  <h3 class="Manuals-Videos-tittle"><strong>{{ section.settings.video_title}}</strong></h3>
+  
+	<div class="video-body">
+    {%- for block in section.blocks -%}
+    {% if block.type == 'Video'%}
+        <div class="video-box">
+          <div class="video-url">
+            <div class="video_wrapindex clearfix" data-id="{{block.id}}">
+              <div id="index-play-{{ forloop.index }}" class="over_imgvideo-btn" >
+                  {% include 'icon-playvideo' %}
+                </div>
+              {% assign img_url = block.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
+              <img
+                   	src="{{ block.settings.image | img_url: '300x200' }}"
+                    data-src="{{ img_url }}"
+                    data-widths="[360, 540, 720, 900, 1080, 1296, 1512, 1728, 1944, 2048]"
+                    data-aspectratio="{{ block.settings.image.aspect_ratio }}"
+                    data-sizes="auto"
+              		alt="{{ block.settings.image.alt | escape }}" class="video_img lazyload">
+              {% if block.settings.youtube_url %}
+                <div class="video-placeholder-wrapper-{{block.id}} video-placeholder-wrapper">
+                  <div id="video-placeholder-{{block.id}}" class="video-placeholder"></div>
+                </div>
+              {% endif %}
+            </div>
+          </div>
+          <div class="video-name">
+            {{ block.settings.title }}
+          </div>
+      </div>
+    {% endif %}
+    {%- endfor -%}
+    </div>
+  {% endif %}
+   
+  </div>
+{% endif %}
+
+<script>
+	var player_videos =[];
+   var tag = document.createElement('script');
+   tag.src = "https://www.youtube.com/player_api?"+Math.random();
+   var firstScriptTag = document.getElementsByTagName('script')[0];
+   firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+</script>
+
+<script>
+  function onYouTubePlayerAPIReady() {
+    {% for block in section.blocks %} 
+    {% if block.settings.youtube_url %}
+        player_videos["player_video_"+"{{block.id}}"] = new YT.Player('video-placeholder-{{block.id}}', {
+              width: 850,
+              height: 480,
+              videoId: '{{ block.settings.youtube_url.id }}',
+              playerVars: {
+                  color: 'white',
+                  controls:1,
+                  loop:1,
+                      showinfo: 0,
+                      rel: 1,
+              },
+              events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+          });
+                      
+                      function onPlayerReady(event) {
+                      event.target.mute();
+                      }
+
+                      function onPlayerStateChange(event) {
+                      if (event.data == YT.PlayerState.PLAYING) {
+                      event.target.mute();
+                      }
+                      }
+        
+    {% endif %}
+   {% endfor %}
+  }
+
+</script>
+
+<script type="text/javascript">
+
+  $(function(){
+    $(".videoloop-dex").click(function(){
+      $(this).prop("controls","ture");
+      console.log(222);
+    });
+    
+    $(".video_wrapindex").click(function(){
+      $(this).find(".over_imgvideo-btn").css("display","none");
+      $(this).find(".video-placeholder").css({'width':$(this).find(".video_img").width(),'height':$(this).find(".video_img").height(),'display': 'block'});
+      $(this).find(".video_img").css("display","none");
+      $(this).find(".video-placeholder-wrapper").css("display","block");
+      var blockid = $(this).attr("data-id");
+      player_videos["player_video_"+blockid].playVideo();
+      console.log($(this).find(".video-placeholder"));
+      	  setInterval(function(){
+		  let cur_sec=player_videos["player_video_"+blockid].getCurrentTime();
+		  let total_sec=player_videos["player_video_"+blockid].getDuration();
+		  if(total_sec-cur_sec<=2){
+			  player_videos["player_video_"+blockid].seekTo(0);
+		  }
+	  },500);
+      
+    });
+  });
+
+</script>
+
+{% schema %}
+  {
+    "name": "video & download",
+    "settings": [
+        {
+           "type": "checkbox",
+           "id": "check_file",
+           "label": "Show flie",
+           "default": true
+        },
+		{
+           "type": "checkbox",
+           "id": "check_video",
+           "label": "Show video",
+           "default": false
+        },
+		{
+            "type": "text",
+            "id": "video_title",
+            "label": "Video title",
+			"default":"STEP BY STEP ASSEMBLY VIDEOS"
+        },
+		{
+            "type": "text",
+            "id": "file_title",
+            "label": "File title",
+			"default":"DOWNLOAD Manuals"
+        }
+],
+"blocks": [
+{
+      "type": "Video",
+      "name": "Video",
+	  "settings": [        
+		{
+            "type": "text",
+            "id": "title",
+            "label": "bottom_text",
+			"default":"features"
+        },
+		{
+            "type": "image_picker",
+            "id": "image",
+            "label": "image",
+            "info":"Image size:600*400px"
+        },
+		{
+            "type": "video_url",
+            "id": "youtube_url",
+            "label": "video_url",
+            "accept": [
+            	"youtube"
+            ]
+        }
+		]
+},
+{
+      "type": "file",
+      "name": "file",
+	  "settings": [        
+		{
+            "type": "text",
+            "id": "file_name",
+            "label": "manuals_tittle"
+        },
+		{
+            "type": "url",
+            "id": "url",
+            "label": "link"
+        }
+		]
+}
+],
+ "presets": [
+    {
+      "name": "Featured block",
+      "category": "Image"
+    }
+  ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

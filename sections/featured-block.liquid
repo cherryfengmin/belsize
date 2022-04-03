@@ -1,0 +1,130 @@
+{% if section.blocks.size > 0%} 
+<div class="featured-block wrapper">
+  <h3 class="text-center"><strong>{{ section.settings.title }}</strong></h3>
+ 
+     <div class=" featured-block-top">
+       {%- for block in section.blocks -%} 
+       <div class="grid__item block-top-li one-quarter">
+         {{ block.settings.title }}
+       </div>
+        {%- endfor -%}
+    </div>
+     
+    <div class="featured-block-main">
+      {%- for block in section.blocks -%}     
+  <div class=" feature-row">
+    {% capture media_layout %}
+      <div class="feature-row__item ">
+        {% if block.settings.image != blank %}
+          <noscript>
+            {{ block.settings.image | img_url: '900x600' | img_tag: block.settings.image.alt, 'feature-row__image-no-js' }}
+          </noscript>
+          <div class="feature-row__image-wrapper" style="padding-top:{{ 1 | divided_by: block.settings.image.aspect_ratio | times: 100}}%;">
+            {% assign img_url = block.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
+            <img class="feature-row__image lazyload"
+              src="{{ block.settings.image | img_url: '300x200' }}"
+              data-src="{{ img_url }}"
+              data-widths="[360, 540, 720, 900, 1080, 1296, 1512, 1728, 1944, 2048]"
+              data-aspectratio="{{ block.settings.image.aspect_ratio }}"
+              data-sizes="auto"
+              alt="{{ block.settings.image.alt | escape }}">
+        </div>
+        {% else %}
+          {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+        {% endif %}
+      </div>
+    {% endcapture %}
+
+    <div class="feature-row">
+   
+      <div class="feature-row__item feature-row__text feature-row__text--{{ block.settings.layout }}">
+        {% if block.settings.title != blank %}
+          <h2 class="h3">{{ block.settings.title | escape }}</h2>
+        {% endif %}
+        {% if block.settings.tab_text != blank %}
+          <div class="rte-setting featured-row__subtext">{{ block.settings.tab_text }}</div>
+        {% endif %}
+        {% if block.settings.btn != blank and block.settings.url != blank %}
+        <div class="small--text-center">
+          <a href="{{ block.settings.url }}" class="btn">
+            {{ block.settings.btn | escape }}
+          </a>
+        </div>
+        {% endif %}
+      </div>
+
+        {{ media_layout }}
+
+    </div>
+  </div>   
+      {%- endfor -%}
+    </div></div>
+{% endif %}
+
+
+{% schema %}
+  {
+    "name": "Featured block",
+    "settings": [
+{
+            "type": "text",
+            "id": "title",
+            "label": "title",
+			"default":"The Safest Bike on the Block"
+        }
+],
+"blocks": [
+{
+      "type": "Image",
+      "name": "Image",
+	  "settings": [        
+		{
+            "type": "text",
+            "id": "title",
+            "label": "features tab title",
+			"default":"features"
+        },
+		{
+            "type": "image_picker",
+            "id": "image",
+            "label": "image",
+            "info":"Image size:900*600px"
+        },
+		{
+            "type": "text",
+            "id": "tab_title",
+            "label": "title"
+        },
+		{
+            "type": "textarea",
+            "id": "tab_text",
+            "label": "text"
+        },
+		{
+            "type": "text",
+            "id": "btn",
+            "label": "btn",
+			"default":"Learn more"
+        },
+		{
+            "type": "url",
+            "id": "url",
+            "label": "link"
+        }
+		]
+}
+],
+ "presets": [
+    {
+      "name": "Featured block",
+      "category": "Image"
+    }
+  ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

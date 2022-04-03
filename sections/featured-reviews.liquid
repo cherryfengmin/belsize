@@ -1,0 +1,154 @@
+{% if section.blocks.size > 0%} 
+<div class="featured-reviews">
+  <h3 class="text-center"><strong>{{ section.settings.title }}</strong></h3>
+  <div class="wrapper">  
+    <div class="grid-uniform featured-reviews-container">
+      {%- for block in section.blocks -%}     
+      {%- case block.type -%}
+      {%- when 'Image' -%}
+      <div class="grid__item  one-third  "> 
+        <div class="feature-row__image-wrapper" style="padding-top:{{ 1 | divided_by: block.settings.image.aspect_ratio | times: 100}}%;">
+          {% assign img_url = block.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
+          <img class="feature-row__image lazyload"
+               src="{{ block.settings.image | img_url: '300x300' }}"
+               data-src="{{ img_url }}"
+               data-widths="[360, 540, 720, 900, 1080, 1296, 1512, 1728, 1944, 2048]"
+               data-aspectratio="{{ block.settings.image.aspect_ratio }}"
+               data-sizes="auto"
+               alt="{{ block.settings.image.alt | escape }}">
+        </div>
+      </div>
+      {%- when 'Article' -%}
+      <div class="grid__item  one-third  ">
+        {%- assign article = articles[block.settings.article] -%}
+        <div class="fea-review-cont">
+        <div class="review-top">
+          <span>{% include 'icon-star'%}{% include 'icon-star'%}{% include 'icon-star'%}{% include 'icon-star'%}{% include 'icon-star'%}</span>&nbsp;<strong>{{ article.title | link_to: article.url }}</strong>
+        </div>
+        <div class="review-author">{{ block.settings.author }} | {{ article.published_at  | date: format: 'date' }} </div>
+        <div class="review-excerpt">{{ article.excerpt_or_content | truncatewords: 100 }}</div>
+          {%  if article.content contains 'img' %}
+          <!--                     {% assign src = article.content | split:'<img' | last | split:'</img>' | first %}
+<img {{src}}> </img> -->
+         
+            <span class="icon icon-plus revew-viewmore" aria-hidden="true" data-id="art-{{ article.id }}"></span>
+        
+          {% endif %}
+
+        </div>
+      </div>
+      {%- endcase-%}
+      {%- endfor -%}
+ 
+    </div>
+    <div class="text-center" ><a class="btn" href="{{ section.settings.link }}">{{ section.settings.btn_text }}</a></div>
+  
+    {% if section.blocks.size > 0%} 
+    {%- for block in section.blocks -%} 
+    {%- assign article = articles[block.settings.article] -%}
+    {%- case block.type -%}
+    {%- when 'Article' -%}
+    {%  if article.content contains 'img' %}
+    <div id="art-{{ article.id }}" class="popup-reviewcont">
+      <span class="icon icon-plus close-popup" aria-hidden="true" data-id="art-{{ article.id }}"></span>
+      <div class="feature-row">
+        <div class="feature-row__item feature-row__text">
+          {% assign src = article.content | split:'<img' | last | split:'</img>' | first | prepend: '<img'  %}
+          {{src}}
+        </div>
+        <div class="feature-row__item">{{ article.content | remove: src }}</div>
+      </div>
+    </div>
+    {% endif %}
+    {%- endcase-%}
+    {%- endfor -%}
+    {% endif %}
+  </div></div>
+{% endif %}
+
+<script>
+  $(".revew-viewmore").click(function(){
+    let getID = $(this).attr("data-id");
+    $("#" + getID).show();
+    $(".popup-bg").show();
+  });
+  $(".close-popup").click(function(){
+    $(this).parent(".popup-reviewcont").hide();
+    $(".popup-bg").hide();
+  });
+  
+  $(".popup-bg").click(
+    function(){
+      $(".popup-reviewcont").hide();
+      $(".popup-bg").hide();
+    }
+  );
+
+</script>
+{% schema %}
+  {
+    "name": "Featured reviews",
+    "settings": [
+	{
+            "type": "text",
+            "id": "title",
+            "label": "Title",
+			"default":"Real Reviews from Real Customers"
+        },
+		{
+            "type": "url",
+            "id": "link",
+            "label": "view more"
+        },
+		{
+            "type": "text",
+            "id": "btn_text",
+			"label": "View more text",
+            "default": "view more"
+        }
+],
+"blocks": [
+{
+      "type": "Image",
+      "name": "Image",
+	  "settings": [
+        {
+            "type": "image_picker",
+            "id": "image",
+            "label": "image",
+            "info":"Image size:500*500px"
+        }
+		]
+},
+{
+      "type": "Article",
+      "name": "Article",
+	  "settings": [
+        {
+            "type": "article",
+            "id": "article",
+            "label": "article"
+        },
+		{
+            "type": "text",
+            "id": "author",
+            "label": "author",
+			"default":"Aaa"
+        }
+		]
+}
+],
+ "presets": [
+    {
+      "name": "Featured reviews",
+      "category": "Text"
+    }
+  ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

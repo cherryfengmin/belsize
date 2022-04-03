@@ -1,0 +1,33 @@
+<!-- /templates/page.liquid -->
+<div class="grid">
+  <div class="grid__item large--five-sixths push--large--one-twelfth">
+
+    <header class="section-header text-center">
+      <h2>{{ page.title }}</h2>
+    </header>
+
+    <div class="grid">
+      <div class="grid__item page-main">
+        <div class="rte rte--nomargin rte--indented-images">
+          {{ page.content }}
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<script>
+  /* slide dropdown */   
+
+    $('.slide-title').click(function(){
+      console.log(111);
+      if($(this).next('.slide-content').is(':hidden')){
+        $(this).addClass("slide-active");
+      }
+      else{
+        $(this).removeClass("slide-active");
+      }
+	$(this).next('.slide-content').slideToggle();
+	});
+   
+</script>

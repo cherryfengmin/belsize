@@ -1,0 +1,28 @@
+<!-- /templates/page.liquid -->
+
+{% assign devide_sections =  page.content | split:'[Dividing]' %}
+<div class="topbanner">{{ devide_sections[0]  }}</div>
+ <div class="wrapper">
+<div class="grid">
+  <div class="grid__item large--five-sixths push--large--one-twelfth">
+
+    <header class="section-header text-center">
+      <h2>{{ page.title }}</h2>
+    </header>
+
+    <div class="grid">
+      <div class="grid__item page-main">
+        <div class="rte rte--nomargin rte--indented-images">
+          
+          {% if page.content contains '[Dividing]'%}
+          {{ devide_sections[1]  }}
+          {% else %}
+          {{ page.content }}
+          {% endif %}
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</div>
